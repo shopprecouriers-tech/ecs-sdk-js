@@ -8,7 +8,7 @@ exports.createSale = (payload) => {
     if(!payload) {
         return Promise.reject({
             code: 400,
-            message: 'Pass transaction{}  argument to createTransaction method',
+            message: 'Pass payload{}  argument to createSale method',
         })
     }
     return rp({
