@@ -10,8 +10,8 @@ npm i omni-sdk-js --save
 ## Usage for inventory 
 
 ```shell script
-OMNIINVENOTRY_URL=https://inventory.yourdomain.com
-OMNIINVENOTRY_SECRET=<super-secret>
+OMNIINVENTORY_URL=https://inventory.yourdomain.com
+OMNIINVENTORY_SECRET=<super-secret>
 ```
 
 ```js
