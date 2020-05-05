@@ -10,7 +10,7 @@ npm i omni-sdk-js --save
 ## Usage for inventory 
 
 ```shell script
-OMNIINVENOTRY_URl=https://inventory.yourdomain.com
+OMNIINVENOTRY_URL=https://inventory.yourdomain.com
 OMNIINVENOTRY_SECRET=<super-secret>
 ```
 
@@ -54,7 +54,6 @@ const payload = {
   other_bills_amount: 0
 };
 
+omni.inventory.createSale(payLoad);
 
-omniInventory.inventory.createSale(payLoad);
-
-```
+``

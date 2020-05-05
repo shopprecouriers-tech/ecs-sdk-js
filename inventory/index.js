@@ -1,7 +1,7 @@
 const debug = require('debug');
 const rp = require('request-promise');
 
-const { OMNIINVENOTRY_URl, OMNIINVENOTRY_SECRET } = process.env;
+const { OMNIINVENOTRY_URL, OMNIINVENOTRY_SECRET } = process.env;
 const log = debug('omniinventory/index.js');
 
 exports.createSale = (payload) => {
@@ -14,7 +14,7 @@ exports.createSale = (payload) => {
     }
     return rp({
         method: 'POST',
-        uri: `${OMNIINVENOTRY_URl}/api/sales?token=${OMNIINVENOTRY_SECRET}`,
+        uri: `${OMNIINVENOTRY_URL}/api/sales?token=${OMNIINVENOTRY_SECRET}`,
         body: payload,
         json: true,
     })
