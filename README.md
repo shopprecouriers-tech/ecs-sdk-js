@@ -54,6 +54,7 @@ const payload = {
   other_bills_amount: 0
 };
 
-omniInventory.createSale(payLoad);
+
+omniInventory.inventory.createSale(payLoad);
 
 ```
