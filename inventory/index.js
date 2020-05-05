@@ -1,4 +1,5 @@
 const debug = require('debug');
+const rp = require('request-promise');
 
 const { OMNIINVENOTRY_URl, OMNIINVENOTRY_SECRET } = process.env;
 const log = debug('omniinventory/index.js');
