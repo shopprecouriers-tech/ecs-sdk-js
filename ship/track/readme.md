@@ -1,18 +1,18 @@
-# OmniLogin Node.js SDK
+# ECS Track
 
 ## Getting Started
 
-You need to install OmniLogin and set API credentials before you get started
+You need to install ECS Track and set API credentials before you get started
 
 If you not installed yet, you can install using below options
 
 1. [DigitalOcean One Click Installation](https://marketplace.digitalocean.com/apps/caprover?action=deploy&refcode=27013eb71a06)  
-2. [Installing by your own](https://github.com/shoppre-tech/omnilogin#installing-omnilogin---in-5-minutes)
+2. [Installing by your own](https://github.com/e-commerce-suite/ShipTrack#installing-shiptrack---in-5-minutes)
 
 ## Installation
 
 ```shell script
-npm i shoppre-sdk -S
+npm i ecs-sdk -S
 ```
 
 ## Usage
@@ -21,12 +21,12 @@ npm i shoppre-sdk -S
 /**
  * Main application file
  */
-if (!process.env.OMNILOGIN_SECRET) {
-  process.env.OMNILOGIN_SECRET = 'your-secret';
+if (!process.env.DOMAIN) {
+  process.env.ECS_TRACK_SECRET = '<secret-token>';
 }
 
 if (!process.env.OMNILOGIN_URL) {
-  process.env.OMNILOGIN_URL = 'https://login.yourdomain.com';
+  process.env.ECS_TRACK_SECRET = 'https://track.yourdomain.com';
 }
 
 const http = require('http');
