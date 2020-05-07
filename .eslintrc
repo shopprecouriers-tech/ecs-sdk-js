@@ -1,0 +1,21 @@
+{
+
+  "extends": [
+    "airbnb/base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": { "modules": true }
+  },
+  "rules": {
+    "no-underscore-dangle": [0],
+    "prefer-promise-reject-errors": [0]
+  },
+  "globals": {
+    "Promise": true,
+    "io": true,
+    "describe": true,
+    "it": true
+  }
+}

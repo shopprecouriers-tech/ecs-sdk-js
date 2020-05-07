@@ -1,10 +1,10 @@
 const debug = require('debug');
-const rp = require('request-promise');
+const rp = require('request-promise-native');
 
 const { OMNIINVENTORY_URL, OMNIINVENTORY_SECRET } = process.env;
 const log = debug('omniinventory/index.js');
 
-exports.createSale = (payload) => {
+exports.create = (payload) => {
   log('createTransaction()', payload);
   if (!payload) {
     return Promise.reject({
