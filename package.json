@@ -1,16 +1,16 @@
 {
   "name": "ecs-sdk",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
     "test": "OMNIENGAGE_URL=http://localhost:7006 NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
-    "release": "npm publish",
+    "release": "npm run lint; npm publish",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
     "validate": "npm ls"
   },
   "bin": {
-    "omniengage": "command.js"
+    "ecs-engage": "engage/command.js"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,10 @@
     "lodash": "^4.17.15",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.8",
-    "response-time": "^2.3.2"
+    "response-time": "^2.3.2",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2",
+    "winston-raven-sentry": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

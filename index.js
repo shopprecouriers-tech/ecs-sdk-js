@@ -8,18 +8,21 @@ const ndr = require('./ship/ndr');
 const engage = require('./engage');
 const log = require('./log');
 const login = require('./login');
+const logger = require('./logger');
 
 module.exports = {
-  login,
+  LOGIN: login,
 
-  pay,
+  PAY: pay,
 
-  inventory,
+  INVENTORY: inventory,
 
-  dispatch,
-  track,
-  ndr,
+  DISPATCH: dispatch,
+  TRACK: track,
+  NDR: ndr,
 
-  engage,
-  log,
+  ENGAGE: engage,
+
+  LOG: log,
+  LOGGER: logger,
 };

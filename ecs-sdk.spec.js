@@ -2,18 +2,19 @@ const ecsSdk = require('./');
 
 describe('ECS SDK index.js', () => {
   it('should have the keys', () => {
-    expect(Object.keys(ecsSdk))
+    expect(JSON.stringify(Object.keys(ecsSdk)))
       .to
       .be
-      .equal([
-        'login',
-        'pay',
-        'inventory',
-        'dispatch',
-        'track',
-        'ndr',
-        'engage',
-        'log',
-      ]);
+      .equal(JSON.stringify([
+        'LOGIN',
+        'PAY',
+        'INVENTORY',
+        'DISPATCH',
+        'TRACK',
+        'NDR',
+        'ENGAGE',
+        'LOG',
+        'LOGGER',
+      ]));
   });
 });
