@@ -1,5 +1,5 @@
 const debug = require('debug');
-const rp = require('request-promise');
+const rp = require('request-promise-native');
 
 const { OMNIPAY_URL, OMNIPAY_SECRET } = process.env;
 const log = debug('omnipay/index.js');

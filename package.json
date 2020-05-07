@@ -1,11 +1,11 @@
 {
-  "name": "omni-sdk",
+  "name": "ecs-sdk",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "OMNIENGAGE_URL=http://localhost:7006 NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
-    "release": "npm publish --access public",
+    "release": "npm publish",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
     "validate": "npm ls"
   },
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/shoppredigital-tech/Omni-sdk-js#readme",
   "dependencies": {
+    "@shoppre/oauth2-server": "^2.4.4",
     "@shoppredigital/oauth2-server": "2.4.5",
     "debug": "^4.1.1",
     "handlebars": "^4.7.3",
