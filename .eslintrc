@@ -1,5 +1,4 @@
 {
-
   "extends": [
     "airbnb/base"
   ],
@@ -10,12 +9,17 @@
   },
   "rules": {
     "no-underscore-dangle": [0],
-    "prefer-promise-reject-errors": [0]
+    "prefer-promise-reject-errors": [0],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   },
   "globals": {
     "Promise": true,
     "io": true,
     "describe": true,
-    "it": true
+    "it": true,
+    "expect": true,
+    "before": true,
+    "beforeEach": true,
+    "sinon": true
   }
 }
