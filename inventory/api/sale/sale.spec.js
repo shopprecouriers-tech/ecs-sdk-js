@@ -1,6 +1,6 @@
 const rp = require('request-promise-native');
 
-const saleService = require('./');
+const saleService = require('./sale.service');
 
 describe('Inventory Sale', () => {
   before(() => {
