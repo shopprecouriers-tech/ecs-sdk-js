@@ -1,14 +1,14 @@
-const pay = require('./pay');
-const inventory = require('./inventory');
+const pay = require('./server/pay');
+const inventory = require('./server/inventory');
 
-const dispatch = require('./ship/dispatch');
-const track = require('./ship/track');
-const ndr = require('./ship/ndr');
+const dispatch = require('./server/ship/dispatch');
+const track = require('./server/ship/track');
+const ndr = require('./server/ship/ndr');
 
-const engage = require('./engage');
-const log = require('./log');
-const login = require('./login');
-const logger = require('./logger');
+const engage = require('./server/engage');
+const log = require('./server/log');
+const login = require('./server/login');
+const logger = require('./lib/logger');
 
 module.exports = {
   LOGIN: login,

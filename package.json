@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "OMNIENGAGE_URL=http://localhost:7006 NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
+    "test-unit": "DOMAIN=shoppredigital.com NODE_ENV=test nyc --reporter=text mocha --opts .mocharc server/**/*.spec.js --exit | grep -v '100'",
+    "test-lib": "DOMAIN=shoppredigital.com NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
     "release": "npm run lint; npm publish",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
     "validate": "npm ls"
