@@ -13,3 +13,14 @@ exports.create = async (data) => {
 
   return order;
 };
+
+exports.show = async (orderId) => {
+  if (!orderId) return Promise.reject({ code: 400, messaage: 'OrderId Not Found' });
+  const order = rp({
+    method: 'GET',
+    uri: `${DISPATCH_URL}/api/orders/${orderId}`,
+    json: true,
+  });
+
+  return order;
+};

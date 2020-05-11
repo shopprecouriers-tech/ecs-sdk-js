@@ -23,3 +23,24 @@ exports.createOrder = async (payload) => {
 
   return res;
 };
+
+exports.getAWB = async (awbNumber) => {
+  const options = {
+    method: 'GET',
+    url: `${DELHIVERY_HOST}/api/p/packing_slip`,
+    headers:
+      {
+        'cache-control': 'no-cache',
+        'content-type': 'application/json',
+        authorization: `Token ${DELHIVERY_TOKEN}`,
+      },
+    qs: {
+      wbns: awbNumber,
+    },
+    json: true,
+  };
+
+  const res = await rp(options);
+
+  return res;
+};

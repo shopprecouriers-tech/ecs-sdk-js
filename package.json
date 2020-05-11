@@ -1,6 +1,6 @@
 {
   "name": "ecs-sdk",
-  "version": "0.0.4",
+  "version": "0.0.12",
   "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,6 @@
     "release": "npm run lint; npm publish",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
     "validate": "npm ls"
-  },
-  "bin": {
-    "ecs-engage": "engage/command.js"
   },
   "repository": {
     "type": "git",
