@@ -7,12 +7,6 @@ const log = debug('inventory/index.js');
 
 exports.createOrder = async (payload) => {
   log('createOrder()', payload);
-  if (!payload) {
-    return Promise.reject({
-      code: 400,
-      message: 'Pass payload{}  argument to createOrder method',
-    });
-  }
   const options = {
     method: 'POST',
     url: `${DELHIVERY_HOST}/api/cmu/create.json`,

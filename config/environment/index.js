@@ -13,6 +13,8 @@ const config = {
   PAY_URL: env.PAY_URL || `${env.PREFIX}pay.${env.DOMAIN}`,
 
   LOG_URL: env.LOG_URL || `${env.PREFIX}log.${env.DOMAIN}`,
+  DELHIVERY_HOST: env.DELHIVERY_HOST || 'https://track.delhivery.com',
+  DELHIVERY_TOKEN: env.DELHIVERY_TOKEN,
 };
 
 module.exports = Object.assign(config, process.env);
