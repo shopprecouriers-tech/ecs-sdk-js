@@ -2,3 +2,5 @@ node_modules
 .idea
 .jshintrc
 .jshintignore
+/.nyc_output/
+/ecs-sdk-logs/
