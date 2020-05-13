@@ -20,9 +20,9 @@ ECS_BOX_SECRET=<super-secret>
 var ECS = require('omni-sdk');
 
 // import ECS object without services
-var ECS = require('aws-sdk/global');
+var ECS = require('ecs-sdk/global');
 
 // import individual service
-var TRACK = require('aws-sdk/servers/track');
+var TRACK = require('ecs-sdk/servers/track');
 
 ``
