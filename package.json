@@ -4,10 +4,11 @@
   "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
-    "test": "OMNIENGAGE_URL=http://localhost:7006 NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
-    "test-unit": "DOMAIN=shoppredigital.com NODE_ENV=test nyc --reporter=text mocha --opts .mocharc server/**/*.spec.js --exit | grep -v '100'",
-    "test-lib": "DOMAIN=shoppredigital.com NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
+    "test": "NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
+    "test-unit": "NODE_ENV=test nyc --reporter=text mocha --opts .mocharc clients/**/*.spec.js --exit",
+    "test-lib": "NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
     "release": "npm run lint; npm publish",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov; codecov --token=e5631ebf-1a3b-4963-beea-93de2a72710d",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
     "validate": "npm ls"
   },
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codecov": "^3.6.5",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",

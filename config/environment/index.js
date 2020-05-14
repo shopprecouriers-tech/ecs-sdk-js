@@ -1,20 +1,25 @@
 
 const { env } = process;
 
+const PREFIX = env.PREFIX || 'http://';
+const DOMAIN = env.DOMAIN || 'ecs.shoppre.com';
+
 const config = {
-  LOGIN_URL: env.LOGIN_URL || `${env.PREFIX}login.${env.DOMAIN}`,
+  PREFIX,
+  DOMAIN,
+  LOGIN_URL: env.LOGIN_URL || `${PREFIX}login.${DOMAIN}`,
 
-  INVENTORY_URL: env.INVENTORY_URL || `${env.PREFIX}inventory.${env.DOMAIN}`,
+  ENGAGE_URL: env.ENGAGE_URL || `${PREFIX}engage.${DOMAIN}`,
 
-  DISPATCH_URL: env.DISPATCH_URL || `${env.PREFIX}dispatch.${env.DOMAIN}`,
-  TRACK_URL: env.TRACK_URL || `${env.PREFIX}track.${env.DOMAIN}`,
-  NDR_URL: env.NDR_URL || `${env.PREFIX}ndr.${env.DOMAIN}`,
+  INVENTORY_URL: env.INVENTORY_URL || `${PREFIX}inventory.${DOMAIN}`,
 
-  PAY_URL: env.PAY_URL || `${env.PREFIX}pay.${env.DOMAIN}`,
+  DISPATCH_URL: env.DISPATCH_URL || `${PREFIX}dispatch.${DOMAIN}`,
+  TRACK_URL: env.TRACK_URL || `${PREFIX}track.${DOMAIN}`,
+  NDR_URL: env.NDR_URL || `${PREFIX}ndr.${DOMAIN}`,
 
-  LOG_URL: env.LOG_URL || `${env.PREFIX}log.${env.DOMAIN}`,
-  DELHIVERY_HOST: env.DELHIVERY_HOST || 'https://track.delhivery.com',
-  DELHIVERY_TOKEN: env.DELHIVERY_TOKEN,
+  PAY_URL: env.PAY_URL || `${PREFIX}pay.${DOMAIN}`,
+
+  LOG_URL: env.LOG_URL || `${PREFIX}log.${DOMAIN}`,
 };
 
 module.exports = Object.assign(config, process.env);

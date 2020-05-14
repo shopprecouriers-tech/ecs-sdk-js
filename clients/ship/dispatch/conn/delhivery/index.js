@@ -1,7 +1,7 @@
 const debug = require('debug');
 const rp = require('request-promise-native');
 
-const { DELHIVERY_HOST, DELHIVERY_TOKEN } = require('../../../../../config/environment');
+const { DELHIVERY_HOST, DELHIVERY_TOKEN } = require('../../config/environment');
 
 const log = debug('inventory/index.js');
 
