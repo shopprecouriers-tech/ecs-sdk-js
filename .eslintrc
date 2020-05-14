@@ -19,6 +19,7 @@
     "it": true,
     "expect": true,
     "before": true,
+    "after": true,
     "beforeEach": true,
     "sinon": true
   }
