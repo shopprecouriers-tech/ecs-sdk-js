@@ -20,7 +20,6 @@ SENTRY_DSN=<sentry-dsn>
 ```
 
 ```js
-
 // import entire SDK
 var ECS = require('ecs-sdk');
 
