@@ -30,4 +30,7 @@ var ECS = require('ecs-sdk/global');
 // import individual service
 var TRACK = require('ecs-sdk/servers/track');
 
+// import logger
+var logger = require('ecs-sdk/lib/logger');
+
 ``
