@@ -1,5 +1,6 @@
 # ECS SDK for JavaScript
 
+[![codecov](https://codecov.io/gh/goECS/ecs-sdk-js/branch/master/graph/badge.svg?token=PNT95664BY)](https://codecov.io/gh/goECS/ecs-sdk-js)
 
 ## Installation
 
