@@ -14,6 +14,9 @@ npm i ecs-sdk --save
 PREFIX=https:// # defaults to https://
 DOMAIN=yourdomain.com
 SECRET=<super-secret>
+
+# for lib/logger
+SENTRY_DSN=<sentry-dsn>
 ```
 
 ```js
