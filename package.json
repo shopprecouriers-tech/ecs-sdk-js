@@ -4,7 +4,7 @@
   "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
+    "lint": "node_modules/.bin/eslint --fix --ext .js --ignore-path .gitignore ./",
     "test": "NODE_ENV=test nyc --reporter=text mocha --opts .mocharc clients/**/*.spec.js --exit",
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov; codecov --token=e5631ebf-1a3b-4963-beea-93de2a72710d",
     "release": "npm run lint; npm publish",
