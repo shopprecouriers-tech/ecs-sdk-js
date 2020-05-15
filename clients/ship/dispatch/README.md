@@ -9,7 +9,7 @@ npm install ecs-sdk --save
 
 | Order Operations | Delhivery Operations  | 
 |------------------|----------------------|
-| shipment.create() | [delhivery.createOrder()](api/sale/sale.spec.js#L11) | 
+| shipment.create() | [delhivery.createOrder()](conn/delhivery/delhivery.spec.js#L53) | 
 | shipment.show() | delhivery.track()  |
 | shipment.cancel() | delhivery.cancel() |
 
