@@ -6,6 +6,7 @@ const track = require('./clients/ship/track');
 const ndr = require('./clients/ship/ndr');
 
 const engage = require('./clients/engage');
+const quickbook = require('./clients/quickbook');
 const log = require('./clients/log');
 const login = require('./clients/login');
 const logger = require('./lib/logger');
@@ -22,6 +23,7 @@ module.exports = {
   NDR: ndr,
 
   ENGAGE: engage,
+  QUICKBOOK: quickbook,
 
   LOG: log,
   LOGGER: logger,
