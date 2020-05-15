@@ -5,6 +5,15 @@
 npm install ecs-sdk --save
 ```
 
+##### API Reference
+
+| Order Operations | Delhivery Operations  | 
+|------------------|----------------------|
+| shipment.create() | [delhivery.createOrder()](api/sale/sale.spec.js#L11) | 
+| shipment.show() | delhivery.track()  |
+| shipment.cancel() | delhivery.cancel() |
+
+
 ##### Usage
 
 #### 1. Create order in dispatch system
