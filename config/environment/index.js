@@ -20,6 +20,7 @@ const config = {
   PAY_URL: env.PAY_URL || `${PREFIX}pay.${DOMAIN}`,
 
   LOG_URL: env.LOG_URL || `${PREFIX}log.${DOMAIN}`,
+  QUICKBOOK_URL: `${PREFIX}quickbook.${DOMAIN}`,
 };
 
 module.exports = Object.assign(config, process.env);
