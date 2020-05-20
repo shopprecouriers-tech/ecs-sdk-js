@@ -1,8 +1,8 @@
 const rp = require('request-promise-native');
 
-const { OMNIQUICKBOOK_URL } = process.env;
+const { QUICKBOOK_URL } = require('../../../../config/environment');
 
-exports.create = (payload) => {
+exports.create = async (payload) => {
   if (!payload) {
     return Promise.reject({
       code: 400,
@@ -10,10 +10,12 @@ exports.create = (payload) => {
     });
   }
 
-  return rp({
+  const sale = await rp({
     method: 'post',
-    uri: `${OMNIQUICKBOOK_URL}/api/sales`,
+    uri: `${QUICKBOOK_URL}/api/sales`,
     body: payload,
     json: true,
   });
+
+  return sale;
 };
