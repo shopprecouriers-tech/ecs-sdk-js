@@ -1,5 +1,6 @@
 const rp = require('request-promise-native');
 const sinon = require('sinon');
+const { expect } = require('chai');
 
 const saleService = require('./sale.service');
 
@@ -43,6 +44,6 @@ describe('Create sale', () => {
 
   it('should create sale', async () => {
     const sale = await saleService.create({});
-    expects(sale.id);
+    expect(sale.id);
   });
 });
