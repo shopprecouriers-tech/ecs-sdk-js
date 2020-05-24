@@ -60,3 +60,19 @@ comment.create({
     }, 'leads')
 ```
 
+### Sending Chrome Desktop Notificaions
+
+```js
+const APPS = {
+  TRACK: 1,
+}
+process.env.APP_ID = APPS.TRACK;
+
+var ENGAGE = require('ecs-sdk').ENGAGE;
+
+ENGAGE.notification.create({
+  title: 'Hello World',
+  message: 'click here to read more about HW'
+})
+```
+
