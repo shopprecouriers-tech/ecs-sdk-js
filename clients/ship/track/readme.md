@@ -4,11 +4,6 @@
 
 You need to install ECS Track and set API credentials before you get started
 
-If you not installed yet, you can install using below options
-
-1. [DigitalOcean One Click Installation](https://marketplace.digitalocean.com/apps/caprover?action=deploy&refcode=27013eb71a06)  
-2. [Installing by your own](https://github.com/e-commerce-suite/ShipTrack#installing-shiptrack---in-5-minutes)
-
 ## Installation
 
 ```shell script
