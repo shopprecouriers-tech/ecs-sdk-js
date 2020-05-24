@@ -1,18 +1,18 @@
 {
   "name": "ecs-sdk",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/.bin/eslint --fix --ext .js --ignore-path .gitignore ./",
-    "test": "NODE_ENV=test node_modules/.bin/nyc --reporter=text node_modules/.bin/mocha --opts .mocharc clients/**/*.spec.js --exit",
-    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov; codecov --token=e5631ebf-1a3b-4963-beea-93de2a72710d",
-    "release": "npm run lint; npm publish",
+    "test": "NODE_ENV=test node_modules/.bin/nyc --reporter=lcov node_modules/.bin/mocha --opts .mocharc clients/**/*.spec.js --exit",
+    "coverage": "codecov --token=e5631ebf-1a3b-4963-beea-93de2a72710d",
+    "release": "npm publish",
     "validate": "npm ls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shoppredigital-tech/Omni-sdk-js.git"
+    "url": "git+https://github.com/goECS-enterprise/ecs-sdk-js.git"
   },
   "author": "Vikas Kumar <vikas@shoppredigital.com>",
   "license": "Apache-2.0",
@@ -23,9 +23,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/shoppredigital-tech/Omni-sdk-js/issues"
+    "url": "https://github.com/goECS-enterprise/ecs-sdk-js/issues"
   },
-  "homepage": "https://github.com/shoppredigital-tech/Omni-sdk-js#readme",
+  "homepage": "https://github.com/goECS-enterprise/ecs-sdk-js#readme",
   "dependencies": {
     "@shoppre/oauth2-server": "^2.4.4",
     "@shoppredigital/oauth2-server": "2.4.5",

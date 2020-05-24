@@ -10,12 +10,12 @@ exports.create = async (payload) => {
     });
   }
 
-  const sale = await rp({
+  const stockItem = await rp({
     method: 'post',
-    uri: `${QUICKBOOK_URL}/api/sales`,
+    uri: `${QUICKBOOK_URL}/api/stockitems`,
     body: payload,
     json: true,
   });
 
-  return sale;
+  return stockItem;
 };
