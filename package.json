@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/.bin/eslint --fix --ext .js --ignore-path .gitignore ./",
-    "test": "NODE_ENV=test node_modules/.bin/nyc --reporter=text node_modules/.bin/mocha --opts .mocharc clients/**/*.spec.js --exit",
+    "test": "NODE_ENV=test node_modules/.bin/nyc --reporter=lcov node_modules/.bin/mocha --opts .mocharc clients/**/*.spec.js --exit",
     "coverage": "codecov --token=e5631ebf-1a3b-4963-beea-93de2a72710d",
     "release": "npm run lint; npm publish",
     "validate": "npm ls"
