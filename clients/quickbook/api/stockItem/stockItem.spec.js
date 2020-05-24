@@ -1,7 +1,7 @@
 // const rp = require('request-promise-native');
 // const { expect } = require('chai');
 // const sinon = require('sinon');
-//
+
 // const stockItemService = require('./stockItem.service');
 //
 // describe('Create StockItem', () => {
