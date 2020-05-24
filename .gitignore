@@ -4,3 +4,4 @@ node_modules
 .jshintignore
 /.nyc_output/
 /ecs-sdk-logs/
+/coverage/
