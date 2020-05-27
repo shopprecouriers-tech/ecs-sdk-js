@@ -1,4 +1,3 @@
-const rp = require('request-promise-native');
 const { expect } = require('chai');
 
 const shipmentService = require('./shipment.service');
