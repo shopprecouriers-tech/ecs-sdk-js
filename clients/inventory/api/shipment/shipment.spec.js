@@ -1,20 +1,18 @@
-// const rp = require('request-promise-native');
-// const sandbox = require('sinon').createSandbox();
-// const shipmentService = require('./shipment.service');
-//
-// describe('Inventory shipment', () => {
-//   beforeEach(() => {
-//     sandbox.stub(rp, 'Request').resolves({ id: 1 });
-//   });
-//
-//   it('should create shipment', async () => {
-//     const shipment = await shipmentService.create({});
-//     expect(shipment.id).to.be.equal(1);
-//   });
-//
-//   after((done) => {
-//     sandbox.restore();
-//     done();
-//   })
-// });
-//
+const { expect } = require('chai');
+
+const shipmentService = require('./shipment.service');
+
+describe('Inventory Shipment', () => {
+  it('should create shipment', async () => {
+    const shipmentId = await shipmentService.create({
+      awb: '1655610334390',
+      mode: 'ONLINE',
+      date: '2019-08-27',
+      partner: 'Delhivery',
+      state_id: 29,
+      customer_id: 1,
+    });
+    expect(shipmentId.id);
+  });
+});
+
