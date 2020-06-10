@@ -10,7 +10,7 @@ describe('Inventory user create', () => {
       last_name: 'HS',
       email: 'punith.hs90@gmail.com',
     });
-    expect(sale.id);
+    expect(user.id);
   });
 });
 
