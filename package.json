@@ -1,6 +1,6 @@
 {
   "name": "ecs-sdk",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "description": "E-commerce Suite",
   "main": "index.js",
   "scripts": {
