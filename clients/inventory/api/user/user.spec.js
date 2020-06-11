@@ -14,3 +14,15 @@ describe('Inventory user create', () => {
   });
 });
 
+describe('Inventory user update', () => {
+  it('should update user', async () => {
+    const user = await userService.update({
+      solutation: 'Mr',
+      first_name: 'Punith',
+      last_name: 'Shoppre',
+      id: 1,
+    });
+    expect(user.id);
+  });
+});
+
