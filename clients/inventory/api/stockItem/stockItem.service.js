@@ -36,7 +36,7 @@ exports.update = (payload) => {
   return rp({
     method: 'PUT',
     uri: `${INVENTORY_URL}/api/stockItems/${id}`,
-    body: payload,
+    body: body,
     json: true,
   });
 };
